@@ -35,8 +35,8 @@ public class SequenceMethod {
 		run.disappear();
 		run.closeb();
 		//run.excel();
-		Integrate integ =new Integrate();
-		integ.fileUpload(driver);
+//		Integrate integ =new Integrate();
+//		integ.fileUpload(driver);
 	}
 	@Test(priority=1)
 	public void launch() {

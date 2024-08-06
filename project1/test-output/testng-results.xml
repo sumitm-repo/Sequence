@@ -1,37 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-25T19:19:08 IST" name="Suite" finished-at="2024-07-25T19:19:15 IST" duration-ms="7214">
+  <suite started-at="2024-08-06T01:04:54 IST" name="Default suite" finished-at="2024-08-06T01:05:02 IST" duration-ms="8852">
     <groups>
     </groups>
-    <test started-at="2024-07-25T19:19:08 IST" name="Test" finished-at="2024-07-25T19:19:15 IST" duration-ms="7214">
+    <test started-at="2024-08-06T01:04:54 IST" name="Default test" finished-at="2024-08-06T01:05:02 IST" duration-ms="8852">
       <class name="fullauto.SequenceMethod">
-        <test-method signature="launch()[pri:1, instance:fullauto.SequenceMethod@6865c751]" started-at="2024-07-25T19:19:08 IST" name="launch" finished-at="2024-07-25T19:19:12 IST" duration-ms="3740" status="PASS">
+        <test-method signature="launch()[pri:1, instance:fullauto.SequenceMethod@6d1d4d7]" started-at="2024-08-06T01:04:54 IST" name="launch" finished-at="2024-08-06T01:04:58 IST" duration-ms="4279" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="checkbox()[pri:2, instance:fullauto.SequenceMethod@6865c751]" started-at="2024-07-25T19:19:12 IST" name="checkbox" finished-at="2024-07-25T19:19:12 IST" duration-ms="530" status="PASS">
+        <test-method signature="checkbox()[pri:2, instance:fullauto.SequenceMethod@6d1d4d7]" started-at="2024-08-06T01:04:58 IST" name="checkbox" finished-at="2024-08-06T01:04:59 IST" duration-ms="783" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkbox -->
-        <test-method signature="checkbox()[pri:2, instance:fullauto.SequenceMethod@6865c751]" started-at="2024-07-25T19:19:12 IST" name="checkbox" finished-at="2024-07-25T19:19:13 IST" duration-ms="496" status="PASS">
+        <test-method signature="checkbox()[pri:2, instance:fullauto.SequenceMethod@6d1d4d7]" started-at="2024-08-06T01:04:59 IST" name="checkbox" finished-at="2024-08-06T01:05:00 IST" duration-ms="827" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkbox -->
-        <test-method signature="contextClick()[pri:3, instance:fullauto.SequenceMethod@6865c751]" started-at="2024-07-25T19:19:13 IST" name="contextClick" finished-at="2024-07-25T19:19:13 IST" duration-ms="680" status="PASS">
+        <test-method signature="contextClick()[pri:3, instance:fullauto.SequenceMethod@6d1d4d7]" started-at="2024-08-06T01:05:00 IST" name="contextClick" finished-at="2024-08-06T01:05:00 IST" duration-ms="968" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contextClick -->
-        <test-method signature="disappear()[pri:4, instance:fullauto.SequenceMethod@6865c751]" started-at="2024-07-25T19:19:13 IST" name="disappear" finished-at="2024-07-25T19:19:15 IST" duration-ms="1524" status="PASS">
+        <test-method signature="disappear()[pri:4, instance:fullauto.SequenceMethod@6d1d4d7]" started-at="2024-08-06T01:05:01 IST" name="disappear" finished-at="2024-08-06T01:05:02 IST" duration-ms="1644" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=127.0.6533.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0791c5903c63c316279a09f729e7768b, getElementText {id=f.B7A555A6DE8CAFCDBA4C1FB692EE157B.d.F379E7BE302688E4082F9160F808BBA5.e.41}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54704}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54704/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0791c5903c63c316279a09f729e7768b)] -> xpath: //div[@class='row']//li//a]
+Session ID: 0791c5903c63c316279a09f729e7768b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=127.0.6533.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0791c5903c63c316279a09f729e7768b, getElementText {id=f.B7A555A6DE8CAFCDBA4C1FB692EE157B.d.F379E7BE302688E4082F9160F808BBA5.e.41}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54704}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54704/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0791c5903c63c316279a09f729e7768b)] -> xpath: //div[@class='row']//li//a]
+Session ID: 0791c5903c63c316279a09f729e7768b
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+at fullauto.SequenceMethod.disappear(SequenceMethod.java:84)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- disappear -->
-        <test-method signature="closeb()[pri:5, instance:fullauto.SequenceMethod@6865c751]" started-at="2024-07-25T19:19:15 IST" name="closeb" finished-at="2024-07-25T19:19:15 IST" duration-ms="182" status="PASS">
+        <test-method signature="closeb()[pri:5, instance:fullauto.SequenceMethod@6d1d4d7]" started-at="2024-08-06T01:05:02 IST" name="closeb" finished-at="2024-08-06T01:05:02 IST" duration-ms="243" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeb -->
       </class> <!-- fullauto.SequenceMethod -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
