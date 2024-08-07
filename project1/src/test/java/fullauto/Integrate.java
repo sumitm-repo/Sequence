@@ -20,11 +20,11 @@ public class Integrate {
 		String filePath ="C:\\Users\\HP\\Downloads\\No Settle Transactions Report20240715072412.xlsx";
 		fileInput.sendKeys(filePath);
 		
-//		WebElement file =driver.findElement(By.id("drag-drop-upload"));
-//		WebDriverWait wait= new WebDriverWait(10,TimeUnit.SECONDS);
-//		wait.until(ExpectedConditions.elementToBeSelected(file))
-//		String filepath="C:\\Users\\HP\\Downloads\\No Settle Transactions Report20240715072412.xlsx";
-//		file.sendKeys(filepath);
+		WebElement file =driver.findElement(By.id("drag-drop-upload"));
+		WebDriverWait wait= new WebDriverWait(10,TimeUnit.SECONDS);
+		wait.until(ExpectedConditions.elementToBeSelected(file))
+		String filepath="C:\\Users\\HP\\Downloads\\No Settle Transactions Report20240715072412.xlsx";
+		file.sendKeys(filepath);
 		
 		
 		driver.findElement(By.xpath("//input[@id='file-submit']")).click();
