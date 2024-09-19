@@ -20,6 +20,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.IReporter;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -27,18 +28,22 @@ import org.testng.annotations.Test;
 public class SequenceMethod {
  static WebDriver driver= new ChromeDriver();
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException, InterruptedException {
 		SequenceMethod run=new SequenceMethod();
 		run.launch();
 		run.checkbox();
 		run.contextClick();
 		run.disappear();
-		run.closeb();
-		//run.excel();
+		run.hover();
+	    run.closeb();
+		run.excel();
 //		Integrate integ =new Integrate();
-//		integ.fileUpload(driver);
+//		integ.digestauth(driver);
+//    	integ.fileUpload(driver);
 	}
-	@Test(priority=1)
+
+	private WebElement element;
+	@BeforeMethod
 	public void launch() {
 		driver.get("https://the-internet.herokuapp.com/");
 		driver.manage().window().maximize();
@@ -46,7 +51,7 @@ public class SequenceMethod {
 		System.out.println("file");
 		//String screenshotBase64 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BASE64);
 	}
-	@Test(priority=2,invocationCount=2)
+	@Test(priority=1,invocationCount=2)
 	public void checkbox() {
 		//CHECKBOXES
 		driver.findElement(By.linkText("Checkboxes")).click();
@@ -55,7 +60,7 @@ public class SequenceMethod {
 		System.out.println(check);
 		driver.navigate().back();
 		}
-	@Test(priority=3)
+	@Test(priority=2)
 	public void contextClick() {
 		driver.manage().timeouts().implicitlyWait(2000, TimeUnit.MILLISECONDS);
 		driver.findElement(By.linkText("Context Menu")).click();
@@ -68,7 +73,7 @@ public class SequenceMethod {
 		driver.navigate().back();	
 	}
 	
-	@Test(priority=4,invocationCount=1)
+	@Test(priority=3,invocationCount=1)
 	public void disappear() {
 		driver.findElement(By.xpath("//a[contains(text(),'Disappearing Elements')]")).click();
 
@@ -116,7 +121,17 @@ public class SequenceMethod {
 			driver.findElement(By.xpath("//input[@type='number']"));
 			
 		}
-		@Test(priority=5)
+		@Test(priority=4)
+		public void hover() throws InterruptedException{
+		driver.findElement(By.xpath("//a[contains(text(),'Hovers')]")).click();
+		Actions action = new Actions(driver);
+		action.moveToElement(driver.findElement(By.xpath("//div[@class='example']//div[2]"))).perform();
+		driver.findElement(By.xpath("//div[@class='example']//div[2]")).click();
+		driver.navigate().to("https://the-internet.herokuapp.com/");
+		
+		}		
+		
+		@AfterClass
 		public void closeb() {
 			driver.quit();
 		}
