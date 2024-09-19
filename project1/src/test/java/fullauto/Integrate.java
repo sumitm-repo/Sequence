@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
 
 public class Integrate {
 	public void fileUpload(WebDriver driver) {
@@ -20,14 +21,19 @@ public class Integrate {
 		String filePath ="C:\\Users\\HP\\Downloads\\No Settle Transactions Report20240715072412.xlsx";
 		fileInput.sendKeys(filePath);
 		
-		WebElement file =driver.findElement(By.id("drag-drop-upload"));
-		WebDriverWait wait= new WebDriverWait(10,TimeUnit.SECONDS);
-		wait.until(ExpectedConditions.elementToBeSelected(file))
-		String filepath="C:\\Users\\HP\\Downloads\\No Settle Transactions Report20240715072412.xlsx";
-		file.sendKeys(filepath);
+//		WebElement file =driver.findElement(By.id("drag-drop-upload"));
+//		WebDriverWait wait= new WebDriverWait(10,TimeUnit.SECONDS);
+//		wait.until(ExpectedConditions.elementToBeSelected(file))
+//		String filepath="C:\\Users\\HP\\Downloads\\No Settle Transactions Report20240715072412.xlsx";
+//		file.sendKeys(filepath);
 		
 		
-		driver.findElement(By.xpath("//input[@id='file-submit']")).click();
+	//	driver.findElement(By.xpath("//input[@id='file-submit']")).click();
+	}
+	@Test(priority=3)
+	public void digestauth(WebDriver driver) {
+		driver.findElement(By.linkText("Digest Authentication")).click();
+		
 	}
 
 

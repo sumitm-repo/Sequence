@@ -5,7 +5,9 @@
     <classes>
       <class name="fullauto.SequenceMethod">
         <methods>
+          <include name="launch"/>
           <include name="disappear"/>
+          <include name="closeb"/>
         </methods>
       </class> <!-- fullauto.SequenceMethod -->
     </classes>
