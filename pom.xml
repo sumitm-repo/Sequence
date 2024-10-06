@@ -51,10 +51,6 @@
 		</dependency>
 
 
-		<dependency>
-			<groupId>com</groupId>
-			<artifactId>agent_portal</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+		
 	</dependencies>
 </project>
