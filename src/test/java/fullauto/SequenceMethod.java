@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -52,12 +53,13 @@ public class SequenceMethod {
 		//String screenshotBase64 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BASE64);
 	}
 	@Test(priority=1,invocationCount=2)
-	public void checkbox() {
+	public void checkbox() throws IOException {
 		//CHECKBOXES
 		driver.findElement(By.linkText("Checkboxes")).click();
 		driver.findElement(By.xpath("//form[@id='checkboxes']//input[1]")).click();
 		boolean check =driver.findElement(By.xpath("//form[@id='checkboxes']//input[1]")).isSelected();
 		System.out.println(check);
+		takeScreenshot("check1");
 		driver.navigate().back();
 		}
 	@Test(priority=2)
@@ -92,6 +94,12 @@ public class SequenceMethod {
 					driver.findElement(By.linkText("Gallery")).click();
 					fount = true;
 					System.out.println(fount);
+					try {
+						takeScreenshot("disppear");
+					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
 					driver.navigate().to("https://the-internet.herokuapp.com/");
 					
 					
@@ -122,11 +130,12 @@ public class SequenceMethod {
 			
 		}
 		@Test(priority=4)
-		public void hover() throws InterruptedException{
+		public void hover() throws InterruptedException, IOException{
 		driver.findElement(By.xpath("//a[contains(text(),'Hovers')]")).click();
 		Actions action = new Actions(driver);
 		action.moveToElement(driver.findElement(By.xpath("//div[@class='example']//div[2]"))).perform();
 		driver.findElement(By.xpath("//div[@class='example']//div[2]")).click();
+		takeScreenshot("hover1");
 		driver.navigate().to("https://the-internet.herokuapp.com/");
 		
 		}		
@@ -134,6 +143,14 @@ public class SequenceMethod {
 		@AfterClass
 		public void closeb() {
 			driver.quit();
+		}
+		public static void takeScreenshot(String fileName) throws IOException{
+			// Take screenshot and store as a file format
+			File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+			// now copy the screenshot to desired location using copyFile //method
+			FileUtils.copyFile(src, 
+					new File("C:\\git\\repository\\project1\\Screenshot\\" + fileName +".png"));
+
 		}
 		
 	
