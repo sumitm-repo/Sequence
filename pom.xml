@@ -34,6 +34,7 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
+<<<<<<< HEAD
 			<version>4.38.0</version>
 		</dependency>
 		
@@ -43,6 +44,10 @@
     <version>2.11.0</version>
 </dependency>
 
+=======
+			<version>4.21.0</version>
+		</dependency>
+>>>>>>> 295d27d64953ee0c197789c3d593b37c9f1d7e2a
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 		<dependency>
 			<groupId>org.testng</groupId>
@@ -56,9 +61,19 @@
 	    <artifactId>cucumber-java</artifactId>
 	    <version>7.18.1</version>
 		</dependency>
+<<<<<<< HEAD
 		
 	
 
 
+=======
+
+
+		<dependency>
+			<groupId>com</groupId>
+			<artifactId>project1</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+>>>>>>> 295d27d64953ee0c197789c3d593b37c9f1d7e2a
 	</dependencies>
 </project>
