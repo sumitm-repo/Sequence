@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-06T16:52:36 IST" name="Default suite" finished-at="2024-10-06T16:52:54 IST" duration-ms="17484">
+    <groups>
+    </groups>
+    <test started-at="2024-10-06T16:52:36 IST" name="Default test" finished-at="2024-10-06T16:52:54 IST" duration-ms="17484">
+      <class name="fullauto.SequenceMethod">
+        <test-method is-config="true" signature="launch()[pri:0, instance:fullauto.SequenceMethod@60b71e8f]" started-at="2024-10-06T16:52:36 IST" name="launch" finished-at="2024-10-06T16:52:42 IST" duration-ms="5313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="checkbox()[pri:1, instance:fullauto.SequenceMethod@60b71e8f]" started-at="2024-10-06T16:52:42 IST" name="checkbox" finished-at="2024-10-06T16:52:43 IST" duration-ms="1524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkbox -->
+        <test-method is-config="true" signature="launch()[pri:0, instance:fullauto.SequenceMethod@60b71e8f]" started-at="2024-10-06T16:52:43 IST" name="launch" finished-at="2024-10-06T16:52:44 IST" duration-ms="835" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="checkbox()[pri:1, instance:fullauto.SequenceMethod@60b71e8f]" started-at="2024-10-06T16:52:44 IST" name="checkbox" finished-at="2024-10-06T16:52:45 IST" duration-ms="1351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkbox -->
+        <test-method is-config="true" signature="launch()[pri:0, instance:fullauto.SequenceMethod@60b71e8f]" started-at="2024-10-06T16:52:45 IST" name="launch" finished-at="2024-10-06T16:52:46 IST" duration-ms="686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="contextClick()[pri:2, instance:fullauto.SequenceMethod@60b71e8f]" started-at="2024-10-06T16:52:46 IST" name="contextClick" finished-at="2024-10-06T16:52:47 IST" duration-ms="1155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contextClick -->
+        <test-method is-config="true" signature="launch()[pri:0, instance:fullauto.SequenceMethod@60b71e8f]" started-at="2024-10-06T16:52:47 IST" name="launch" finished-at="2024-10-06T16:52:48 IST" duration-ms="868" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="disappear()[pri:3, instance:fullauto.SequenceMethod@60b71e8f]" started-at="2024-10-06T16:52:48 IST" name="disappear" finished-at="2024-10-06T16:52:51 IST" duration-ms="2803" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disappear -->
+        <test-method is-config="true" signature="launch()[pri:0, instance:fullauto.SequenceMethod@60b71e8f]" started-at="2024-10-06T16:52:51 IST" name="launch" finished-at="2024-10-06T16:52:52 IST" duration-ms="564" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="hover()[pri:4, instance:fullauto.SequenceMethod@60b71e8f]" started-at="2024-10-06T16:52:52 IST" name="hover" finished-at="2024-10-06T16:52:54 IST" duration-ms="1999" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hover -->
+        <test-method is-config="true" signature="closeb()[pri:0, instance:fullauto.SequenceMethod@60b71e8f]" started-at="2024-10-06T16:52:54 IST" name="closeb" finished-at="2024-10-06T16:52:54 IST" duration-ms="280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeb -->
+      </class> <!-- fullauto.SequenceMethod -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
